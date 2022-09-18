@@ -1,0 +1,30 @@
+﻿<html>
+<head>
+
+</head>
+<body>
+
+	<h1>
+		ben normal bir sayfa değilim...ben cshtml'im. (Not: literatürde cshtml diye bir kavram yoktur. bu asp.net ve asp.net core özel bir durumdur). Tarayıcılar cshtml uzantılı dosyayıyı yorumlayamaz...benim sadece içeriğim htmldir. ben çalışma zamanında render edilirim..
+	</h1>
+
+	<h2>CsHtml uzantılı dosyaların html dosyalarından farkı içerisinde c# ifadelerinin yazılabilmesidir</h2>
+
+	Örn C# kodu
+	@*
+	@ ifadesi razor syntaxtır.
+
+	razor microsoftsun geliştirdiği asp.net ve asp.net core platformlarında viewların içeriisnde c# ifadeleri yazmak için kullanılna syntax'tır.
+
+	*@
+
+	<h1><i><u> @DateTime.Now.ToShortDateString() </u></i></h1>
+
+	<!--100 adet div başlık elementi oluşturalım ve 1'den 100 kadar text set edelim-->
+	@for (int i = 1; i <= 100; i++)
+	{
+		<h1>@i</h1>
+	}
+
+</body>
+</html>
